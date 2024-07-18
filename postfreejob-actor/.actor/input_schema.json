@@ -1,0 +1,30 @@
+{
+    "title": "Scrape data from a web page",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keyword": {
+            "title": "Keywords or title",
+            "type": "string",
+            "description": "Any title or keyword for the job you are looking for.",
+            "editor": "textfield",
+            "prefill": "DevOps"
+        },
+        "location":{
+            "title": "City, state or zip code",
+            "type": "string",
+            "description": "City, state or zip code or Country Name. The more deeper you go the good the results",
+            "editor": "textfield",
+            "prefill": "United States"
+        },
+        "radius":{
+            "title": "Radius of the searching location",
+            "type": "string",
+            "description": "Radius of the search",
+            "editor": "textfield",
+            "prefill": "25"
+        }
+
+    },
+    "required": ["keyword"]
+}
